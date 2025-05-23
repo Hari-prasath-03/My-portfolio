@@ -6,6 +6,8 @@ import Contact from "./components/pages/Contact";
 import Footer from "./components/pages/Footer";
 import Cursor from "./components/ui/Cursor";
 
+import "./App.css";
+
 const App = () => {
   return (
     <div>
