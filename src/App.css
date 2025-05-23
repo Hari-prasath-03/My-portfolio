@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #00ffee;
+  --color-font: #d3d3d3;
+  --color-bg: #0c0c1d;
+  --color-dark: #292c30;
+  --font-primary: "Nunito", sans-serif;
+  --font-secondary: "Lilita One", sans-serif;
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-bg: var(--color-bg);
+  --color-dark: var(--color-dark);
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary); 
+  --breakpoint-sx: 385px;
+  --radius-fancy: 81% 63% 81% 46% / 69% 57% 81% 62%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-font);
+}
+
+.hero-grad {
+  background: linear-gradient(180deg, var(--color-bg), #111132);
+}
+
+.responsive-container {
+  @apply max-w-[1366px] mx-auto flex px-4 sx:px-8 lg:px-24;
+}
+
+.page-title {
+  @apply self-center text-4xl sm:text-5xl w-fit font-secondary text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-primary to-sky-300 text-center leading-tight my-5 md:my-8;
+}
+
+.btn {
+  @apply py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl font-medium cursor-pointer text-xs sm:text-sm;
+}
+
+.btn-outline {
+  @apply border bg-transparent border-current text-current;
+}
+
+.btn-ghost {
+  @apply bg-white/90 text-neutral-900;  
+}
+
+.animate-scroll {
+  animation: scroll linear infinite;
+  animation-play-state: running;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(-50%);
+  }
+}
+
+.animate-move-bg {
+  background-size:200% 200%;
+  animation: moveBg 4s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border-radius {
+  animation: border-radius 6s linear infinite;
+}
+
+@keyframes border-radius {
+  0% {
+    border-radius: var(--radius-fancy);
+  }
+  50% {
+    border-radius: 92% 50% 73% 64% / 77% 57% 81% 79%;
+  }
+  100% {
+    border-radius: var(--radius-fancy);
+  }
+}
+
+.animate-blink {
+  animation: blink 1.5s step-start infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

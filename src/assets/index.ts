@@ -1,0 +1,23 @@
+import inkmarkImg from "./inkmark.png";
+import dragdropImg from "./dragdrop-notes.png";
+import jagasreeImg from "./jagasree.png";
+import tailwindLandingpageImg from "./tailwind-landingpage.png";
+import tickTacToeImg from "./tick-tac-toe.png";
+
+import thisPcIcon from "./ps-icon.png";
+import cmdIcon from "./cmd-icon.png";
+
+import HariSvg from "./name-svg.svg"
+
+export {
+  inkmarkImg,
+  dragdropImg,
+  jagasreeImg,
+  tailwindLandingpageImg,
+  tickTacToeImg,
+  thisPcIcon,
+  cmdIcon,
+  HariSvg,
+};
+
+export const cmdColors = ["bg-red-500", "bg-yellow-400", "bg-green-400"];
