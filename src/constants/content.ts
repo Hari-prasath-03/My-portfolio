@@ -1,4 +1,5 @@
 import {
+  DockerIcon,
   FramerMotionIcon,
   GitHubIcon,
   NextJSIcon,
@@ -39,8 +40,10 @@ import {
   SiMongodb,
   SiMysql,
   SiReactquery,
+  SiReactrouter,
   SiSpring,
   SiSpringboot,
+  SiSpringsecurity,
 } from "react-icons/si";
 
 import {
@@ -49,6 +52,7 @@ import {
   tailwindLandingpageImg,
   dragdropImg,
   tickTacToeImg,
+  quoteLockImg,
 } from "../assets";
 
 export const aboutMe =
@@ -57,16 +61,17 @@ export const aboutMe =
 export const toolsIUse = [
   [
     { name: "VS Code", icon: VSCodeIcon },
+    { name: "Docker", icon: DockerIcon },
     { name: "Vite", icon: ViteIcon },
     { name: "GitHub", icon: GitHubIcon },
     { name: "Postman", icon: PostmanIcon },
-    { name: "Npm", icon: NpmIcon },
   ],
   [
     { name: "React", icon: ReactIcon },
     { name: "TailwindCSS", icon: TailwindIcon },
     { name: "Framer-Motion", icon: FramerMotionIcon },
     { name: "Next.js 15", icon: NextJSIcon },
+    { name: "Npm", icon: NpmIcon },
   ],
 ];
 
@@ -86,6 +91,7 @@ export const skills = [
   { name: "Git", icon: FaGitAlt },
   { name: "Spring framework", icon: SiSpring },
   { name: "Spring Boot", icon: SiSpringboot },
+  { name: "Spring Security", icon: SiSpringsecurity },
 
   // programming
   { name: "C programming", icon: TbBrandCpp },
@@ -99,6 +105,7 @@ export const skills = [
 
   // libraries
   { name: "React Query", icon: SiReactquery },
+  { name: "React Router", icon: SiReactrouter },
 ];
 
 export const projects = [
@@ -124,8 +131,41 @@ export const projects = [
       "Easily manage favorites, trash, and restore deleted files.",
       "Modern UI built using Tailwind and reusable components.",
     ],
-    githubLink: "https://github.com/Hari-prasath-03/Inkmark",
+    githubLink: [
+      "https://github.com/Hari-prasath-03/inkMark-frontend",
+      "https://github.com/Hari-prasath-03/inkMark-server",
+    ],
     liveLink: "https://inkmark.vercel.app",
+  },
+  {
+    image: quoteLockImg,
+    name: "QuoteLock",
+    shortDescription: "Secure quote with rate limits and email auth.",
+    techStacks: [
+      "React",
+      "TypeScript",
+      "Bootstrap",
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "MySQL",
+    ],
+    description: [
+      "Built with secure, scalable Spring Boot backend architecture.",
+      "Custom token bucket algorithm for user rate limiting.",
+      "Implements stateless JWT auth using Spring Security filters.",
+      "Interceptor-based request guard without touching endpoint logic.",
+      "Responsive HTML emails powered by Thymeleaf templating engine.",
+      "Supports email OTP verification for signup and reset-password.",
+      "Developed using React and TypeScript for safer UI logic.",
+      "Bootstrap-styled frontend with clean, responsive modern design.",
+    ],
+    githubLink: [
+      "https://github.com/Hari-prasath-03/QuoteLock-frontend",
+      "https://github.com/Hari-prasath-03/QuoteLock-server",
+    ],
+    liveLink: "https://quotelock.vercel.app/",
   },
   {
     image: dragdropImg,
@@ -149,7 +189,10 @@ export const projects = [
       "Built with modular React components and RESTful API integration.",
       "Modern UI with Tailwind and smooth drag-and-drop interaction.",
     ],
-    githubLink: "https://github.com/Hari-prasath-03/NotesApp",
+    githubLink: [
+      "https://github.com/Hari-prasath-03/notes-app",
+      "https://github.com/Hari-prasath-03/notes-app-server",
+    ],
     liveLink: "https://dad-notes-app.vercel.app/",
   },
   {
@@ -188,7 +231,7 @@ export const projects = [
       "Reusable Button and components with interactive hover effects.",
       "Tailored theming logic using custom hook for mode transitions.",
     ],
-    githubLink: "https://github.com/Hari-prasath-03/Tailwindcss-LandingPage",
+    githubLink: ["https://github.com/Hari-prasath-03/Tailwindcss-LandingPage"],
     liveLink: "https://hari-prasath-03.github.io/Tailwindcss-LandingPage/",
   },
   {
@@ -204,7 +247,7 @@ export const projects = [
       "Vite used for fast development with hot module replacement.",
       "Features a clean codebase and structure for easy scalability.",
     ],
-    githubLink: "https://github.com/Hari-prasath-03/4x4-tick-tack-toe",
+    githubLink: ["https://github.com/Hari-prasath-03/4x4-tick-tack-toe"],
     liveLink: "https://4x4-tick-tac-toe.vercel.app/",
   },
 ];
