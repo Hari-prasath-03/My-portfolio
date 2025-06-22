@@ -36,7 +36,7 @@ const LinearGradient = () => {
       }
     };
     handleSetcolorPercent();
-  }, [colors]);
+  }, [colors]); 
 
 
   return (
