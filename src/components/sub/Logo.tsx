@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import "../../css/Logo.scss";
 
 const Logo = () => {
   return (
@@ -8,9 +7,12 @@ const Logo = () => {
       initial={{ opacity: 0, scale: 0.3 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
-      className="flex items-center gap-4 logo cursor-pointer" 
+      className="text-2xl font-primary font-bold cursor-pointer group"
     >
-      Hari prasath K
+      Port
+      <span className="text-primary/85 group-hover:text-primary transition-colors duration-300 ease-in">
+        folio
+      </span>
     </motion.a>
   );
 };
