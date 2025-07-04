@@ -53,6 +53,7 @@ import {
   dragdropImg,
   tickTacToeImg,
   quoteLockImg,
+  ytAudioPlayeer,
 } from "../assets";
 
 export const aboutMe =
@@ -136,6 +137,24 @@ export const projects = [
       "https://github.com/Hari-prasath-03/inkMark-server",
     ],
     liveLink: "https://inkmark.vercel.app",
+  },
+  {
+    image: ytAudioPlayeer,
+    name: "YT Audio PWA",
+    shortDescription: "Progressive web music player using YouTube iframe.",
+    techStacks: ["React", "TypeScript", "Tailwind CSS", "YouTube IFrame API"],
+    description: [
+      "Lightweight audio player built over YouTube iframe API.",
+      "Add any YouTube music links to custom playlists instantly.",
+      "Enjoy autoplay, looping, and next-track transitions seamlessly.",
+      "Media Session API integration for full mobile background controls.",
+      "Built as a PWA with looks similar to native apps.",
+      "Responsive UI designed for both desktop and mobile experiences.",
+      "Loop toggle for individual tracks with visual feedback support.",
+      "Auto-saves playlist to localStorage for persistent music sessions.",
+    ],
+    githubLink: ["https://github.com/Hari-prasath-03/yt-player"],
+    liveLink: "https://yt-audio-playeer.vercel.app/",
   },
   {
     image: quoteLockImg,
