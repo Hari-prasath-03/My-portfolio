@@ -26,14 +26,14 @@ const Cursor = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  mX.set(x + 12);
-  mY.set(y + 12);
+  mX.set(x - 5);
+  mY.set(y - 5);
 
   return (
     <motion.div
       style={{ x: springX, y: springY }}
       className={clsx(
-        "size-6 md:size-10 fixed z-[999] rounded-full outline-2 transition-colors duration-300",
+        "hidden sm:block size-8 fixed z-[999] rounded-full outline-2 transition-colors duration-300 pointer-events-none",
         isPointer ? "outline-primary/75" : "outline-sky-50/75"
       )}
     />

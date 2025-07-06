@@ -62,7 +62,7 @@ const Contact = () => {
               {/* cmd */}
               <div
                 onClick={() => setIsFormOpen(true)}
-                className="flex flex-col items-center cursor-pointer"
+                className="flex flex-col items-center"
               >
                 <img src={cmdIcon} className="size-10" alt="thispc" />
                 <span className="text-[8px] font-bold text-center tracking-wider leading-[7px]">
@@ -95,7 +95,7 @@ const ContactInfoTag = ({
 }) => (
   <div
     onClick={onClick}
-    className="flex items-center gap-3 sm:gap-5 font-primary cursor-pointer"
+    className="flex items-center gap-3 sm:gap-5 font-primary"
   >
     <div className="bg-primary/80 p-2 sm:p-2.5 rounded-md shadow-md">
       <Icon size={24} className="text-gray-700" />

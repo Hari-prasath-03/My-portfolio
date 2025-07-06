@@ -27,6 +27,7 @@ html {
 body {
   background-color: var(--color-bg);
   color: var(--color-font);
+  cursor: url('/cursor-sm.png'), auto;
 }
 
 .hero-grad {
@@ -41,8 +42,16 @@ body {
   @apply self-center text-4xl sm:text-5xl w-fit font-secondary text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-primary to-sky-300 text-center leading-tight my-5 md:my-8;
 }
 
+.para-title {
+  @apply self-center text-lg sm:text-xl w-fit font-secondary text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-primary to-sky-300 text-center leading-tight my-1 md:my-2;
+}
+
+.para {
+  @apply font-primary text-neutral-50 font-light text-xs md:text-base h-fit;
+}
+
 .btn {
-  @apply py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl font-medium cursor-pointer text-xs sm:text-sm;
+  @apply py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl font-medium text-xs sm:text-sm;
 }
 
 .btn-outline {
@@ -51,6 +60,10 @@ body {
 
 .btn-ghost {
   @apply bg-white/90 text-neutral-900;  
+}
+
+.after-hover {
+  @apply relative after:absolute after:bottom-0 after:left-0 after:w-full sm:after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-emerald-400 after:via-primary after:to-sky-300 after:transition-all after:duration-300 hover:after:w-full;
 }
 
 .animate-scroll {
@@ -114,5 +127,22 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.animate-smooth-rotate {
+  animation: smooth-rotate 6s linear infinite;
+}
+
+@keyframes smooth-rotate {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(6deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(-3deg);
   }
 }

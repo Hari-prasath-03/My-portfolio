@@ -55,6 +55,7 @@ import {
   quoteLockImg,
   ytAudioPlayeer,
 } from "../assets";
+import { GiZeusSword } from "react-icons/gi";
 
 export const aboutMe =
   "I'm a final year ECE student and a passionate Full-Stack Developer who thrives on solving complex system design challenges. From front-end magic to back-end logic, I love creating seamless, scalable, and impactful web applications. Constantly learning, always building, and never backing down from a tough problem.";
@@ -106,6 +107,7 @@ export const skills = [
 
   // libraries
   { name: "React Query", icon: SiReactquery },
+  { name: "Zustand", icon: GiZeusSword },
   { name: "React Router", icon: SiReactrouter },
 ];
 

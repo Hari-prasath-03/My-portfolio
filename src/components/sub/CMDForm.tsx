@@ -74,7 +74,7 @@ const CMDForm = ({ closeForm }: { closeForm: () => void }) => {
           <h1 className="ml-5 text-sm">Contact@form{">"}</h1>
         </div>
         {/* x icon */}
-        <div className="cursor-pointer" onClick={closeForm}>
+        <div onClick={closeForm}>
           <IoCloseOutline className="text-neutral-50 size-5" />
         </div>
       </div>
@@ -129,7 +129,7 @@ const CMDForm = ({ closeForm }: { closeForm: () => void }) => {
               label={questions[3].label}
               data={formData}
             >
-              <div className="flex items-center gap-3 ml-3 text-blue-400 *:hover:underline *:cursor-pointer">
+              <div className="flex items-center gap-3 ml-3 text-blue-400 *:hover:underline">
                 <button tabIndex={1} onClick={handleSubmit} disabled={loading}>
                   {loading ? "Submitting..." : "Submit"}
                 </button>

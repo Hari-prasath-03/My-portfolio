@@ -3,6 +3,7 @@ import Card, { CardHeader } from "../ui/Card";
 import PageTitle from "../ui/PageTitle";
 import ToolsItems from "../sub/ToolsItems";
 import Skills from "../sub/Skills";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -79,6 +80,12 @@ const About = () => {
             <Skills />
           </Card>
         </div>
+        <Link
+          to="/about"
+          className="text-center self-center w-fit mt-8 text-lg md:text-xl font-secondary text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-primary to-sky-300 leading-tight after-hover"
+        >
+          View more about me?
+        </Link>
       </section>
     </div>
   );

@@ -67,7 +67,7 @@ const Links: React.FC<LinksProps> = ({ toggleSidebar }) => {
           variants={linkVarients}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="text-3xl cursor-pointer hover:text-primary"
+          className="text-3xl hover:text-primary"
         >
           {link}
         </motion.a>

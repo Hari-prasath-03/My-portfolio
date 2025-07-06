@@ -17,7 +17,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
         transition: "all 0.3s ease-in-out",
         boxShadow: isOpen ? "none" : "inset 0 0 10px rgba(255, 255, 255, 0.2)",
       }}
-      className="fixed z-[999] top-[16px] left-[16px] size-[50px] rounded-full cursor-pointer duration-300 ease-in-out"
+      className="fixed z-[999] top-[16px] left-[16px] size-[50px] rounded-full duration-300 ease-in-out"
     >
       <svg
         className="grid place-content-center w-full"

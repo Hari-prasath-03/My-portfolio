@@ -7,7 +7,7 @@ const Logo = () => {
       initial={{ opacity: 0, scale: 0.3 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
-      className="text-2xl font-primary font-bold cursor-pointer group"
+      className="text-2xl font-primary font-bold group"
     >
       Port
       <span className="text-primary/85 group-hover:text-primary transition-colors duration-300 ease-in">

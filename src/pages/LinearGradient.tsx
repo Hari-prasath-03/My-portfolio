@@ -4,7 +4,6 @@ import { IoTrashOutline } from "react-icons/io5";
 
 const LinearGradient = () => {
   const [deg, setdeg] = useState(180);
-  const [bg, setBg] = useState("#f3e8ff");
   const [colors, setColors] = useState(["red", "blue"]);
   const [colorPercent, setcolorPercent] = useState([0, 100]);
 
@@ -36,16 +35,12 @@ const LinearGradient = () => {
       }
     };
     handleSetcolorPercent();
-  }, [colors]); 
-
+  }, [colors]);
 
   return (
     <div className="min-h-screen bg-purple-100 flex gap-20 sm:gap-0 flex-col sm:flex-row font-primary text-neutral-900 px-4 py-16">
       {/* left */}
-      <div
-        style={{ background: bg }}
-        className="flex-1 flex flex-col gap-8 items-center justify-center"
-      >
+      <div className="flex-1 flex flex-col gap-8 items-center justify-center">
         <span className="mt-4 text-center bg-white px-4 py-2 rounded border text-sm w-full max-w-lg ">
           background: linear-gradient({deg}deg,{" "}
           {colors.map((color, i) => `${color} ${colorPercent[i]}%`).join(", ")}
@@ -90,15 +85,7 @@ const LinearGradient = () => {
 
       {/* right */}
       <div className="flex-1 border-0 sm:border-l border-neutral-300 flex flex-col gap-3 items-center justify-center">
-        <label className="inline-flex items-center gap-1">
-          <span>Background: </span>
-          <input
-            type="text"
-            value={bg}
-            className="border border-neutral-400 rounded px-2 py-1 w-36"
-            onChange={(e) => setBg(e.target.value)}
-          />
-        </label>
+        <h1 className="text-xl md:text-2xl font-semibold mb-2">Play as you like</h1>
         {colors.map((color, i) => (
           <div key={i} className="flex items-center gap-2">
             <input

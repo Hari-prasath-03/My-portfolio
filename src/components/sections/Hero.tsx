@@ -57,9 +57,9 @@ const Hero = () => {
               variants={slideInFromLeft(0.3)}
               initial="hidden"
               animate="visible"
-              className="text-4xl sm:text-6xl font-secondary text-transparent bg-clip-text bg-gradient-to-tr from-primary via-violet-400 to-white animate-move-bg"
+              className="text-3xl sm:text-6xl font-secondary text-transparent bg-clip-text bg-gradient-to-tr from-primary via-violet-400 to-white animate-move-bg"
             >
-              Future-Ready Web Developer.
+              Full-Stack Developer & Software Developer
             </motion.h2>
             <motion.p
               variants={slideInFromLeft(0.5)}
