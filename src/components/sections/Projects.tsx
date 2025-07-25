@@ -44,56 +44,58 @@ const ProjectCard = ({
 }: {
   project: Project;
   index: number;
-}) => (
-  <Card
-    animateDirFrom={undefined}
-    animateOnce
-    className="flex flex-col sm:flex-row gap-5 sm:gap-10 p-3 sm:p-0 sm:py-10 sm:pl-10 sticky"
-    style={{
-      top: `calc(35px + ${index * 30}px)`,
-    }}
-  >
-    <div className="flex-1 flex gap-3 sm:gap-5 flex-col">
-      <CardHeader
-        title={project.name}
-        discription={project.shortDescription}
-        fontSize="lg"
-      />
-      <hr className="text-stone-500" />
+}) => {
+  return (
+    <Card
+      animateDirFrom={undefined}
+      animateOnce
+      className="flex flex-col sm:flex-row gap-5 sm:gap-10 p-3 sm:p-0 sm:py-10 sm:pl-10 sticky"
+      style={{
+        top: `calc(35px + ${index * 30}px)`,
+      }}
+    >
+      <div className="flex-1 flex gap-3 sm:gap-5 flex-col">
+        <CardHeader
+          title={project.name}
+          discription={project.shortDescription}
+          fontSize="lg"
+        />
+        <hr className="text-stone-500" />
 
-      <ul className="flex flex-wrap gap-2 px-2">
-        {project.techStacks.map((tool, i) => (
-          <SkillTag key={i} tool={tool} />
-        ))}
-      </ul>
+        <ul className="flex flex-wrap gap-2 px-2">
+          {project.techStacks.map((tool, i) => (
+            <SkillTag key={i} tool={tool} />
+          ))}
+        </ul>
 
-      <ul className="space-y-1 px-2">
-        {project.description.map((desc, i) => (
-          <li
-            key={i}
-            className="text-xs sm:text-base inline-flex gap-2 text-stone-400 items-center"
-          >
-            <IoIosCheckmarkCircleOutline />
-            {desc}
-          </li>
-        ))}
-      </ul>
+        <ul className="space-y-1 px-2">
+          {project.description.map((desc, i) => (
+            <li
+              key={i}
+              className="text-xs sm:text-base inline-flex gap-2 text-stone-400 items-center"
+            >
+              <IoIosCheckmarkCircleOutline />
+              {desc}
+            </li>
+          ))}
+        </ul>
 
-      <div className="pl-3 flex flex-wrap gap-5">
-        <GithubBtn githubLink={project.githubLink} />
-        {project.liveLink && <ViewLiveBtn liveLink={project.liveLink} />}
+        <div className="pl-3 flex flex-wrap gap-5">
+          <GithubBtn githubLink={project.githubLink} />
+          {project.liveLink && <ViewLiveBtn liveLink={project.liveLink} />}
+        </div>
       </div>
-    </div>
 
-    <div className="flex-1 bg-cyan-400">
-      <img
-        className="h-full object-left object-cover"
-        src={project.image}
-        alt={project.name}
-      />
-    </div>
-  </Card>
-);
+      <div className="flex-1 bg-cyan-400">
+        <img
+          className="h-full object-left object-cover"
+          src={project.image}
+          alt={project.name}
+        />
+      </div>
+    </Card>
+  );
+};
 
 const SkillTag = ({ tool }: { tool: Project["techStacks"][number] }) => (
   <li className="w-fit inline-flex items-center bg-gradient-to-r from-emerald-300 to-sky-500 rounded-full gap-2 px-3 py-1 shadow-2xl border border-neutral-800/20">

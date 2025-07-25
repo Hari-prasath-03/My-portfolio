@@ -8,6 +8,7 @@ import ytAudioPlayeer from "./yt-audio-playeer.png";
 
 import thisPcIcon from "./ps-icon.png";
 import cmdIcon from "./cmd-icon.png";
+import kanbanBoardImg from "./notion-konban.png";
 
 
 export {
@@ -19,7 +20,8 @@ export {
   thisPcIcon,
   cmdIcon,
   quoteLockImg,
-  ytAudioPlayeer
+  ytAudioPlayeer,
+  kanbanBoardImg,
 };
 
 export const cmdColors = ["bg-red-500", "bg-yellow-400", "bg-green-400"];

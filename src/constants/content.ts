@@ -54,6 +54,7 @@ import {
   tickTacToeImg,
   quoteLockImg,
   ytAudioPlayeer,
+  kanbanBoardImg,
 } from "../assets";
 import { GiZeusSword } from "react-icons/gi";
 
@@ -157,6 +158,24 @@ export const projects = [
     ],
     githubLink: ["https://github.com/Hari-prasath-03/yt-player"],
     liveLink: "https://yt-audio-playeer.vercel.app/",
+  },
+  {
+    image: kanbanBoardImg,
+    name: "Kanban Task Planner",
+    shortDescription:
+      "Minimal and intuitive Kanban board for organizing tasks and boosting productivity.",
+    techStacks: ["React", "Tailwind CSS", "JavaScript", "Drag and Drop"],
+    description: [
+      "A clean, drag-and-drop based task planner built using React.",
+      "Supports multiple columns like Backlog, TODO, In Progress etc.",
+      "Ideal for tracking personal projects, learning goals, and team workflows.",
+      "Real-time visual updates and card interactions for clear tracking.",
+      "Lightweight design with responsive layout and intuitive card actions.",
+      "Built with modern utility-first styling using Tailwind CSS.",
+      "All data is stored in local storage for simplicity.",
+    ],
+    githubLink: ["https://github.com/Hari-prasath-03/Notion-Konbat"],
+    liveLink: "https://notion-konban.vercel.app/",
   },
   {
     image: quoteLockImg,
