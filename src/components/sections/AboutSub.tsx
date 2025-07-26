@@ -20,9 +20,10 @@ const AboutSub = () => {
         "Fascinated by system design, clean architecture, and real-world problem solving. Currently deepening my understanding of how large-scale systems are structured and scaled. My goal is to evolve into a developer who can think across the stack, design with intention, and contribute meaningfully to high-performing teams.",
     },
   ];
-  
+
   return (
     <motion.section
+      id="about"
       className="responsive-container flex flex-col items-center"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}

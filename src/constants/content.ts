@@ -55,6 +55,7 @@ import {
   quoteLockImg,
   ytAudioPlayeer,
   kanbanBoardImg,
+  ticTacToeWsImg,
 } from "../assets";
 import { GiZeusSword } from "react-icons/gi";
 
@@ -142,6 +143,38 @@ export const projects = [
     liveLink: "https://inkmark.vercel.app",
   },
   {
+    image: ticTacToeWsImg,
+    name: "TicTacToe Multiplayer",
+    shortDescription:
+      "Real-time 2-player TicTacToe with AI & WebSocket powered backend.",
+    techStacks: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer-motion",
+      "Spring Boot",
+      "WebSocket",
+      "Java",
+      "Docker",
+      "Railway",
+    ],
+    description: [
+      "Real-time multiplayer TicTacToe with also optional AI opponent.",
+      "Backend by Spring Boot using WebSocket for live communication.",
+      "Players can either play against each other or versus AI bot.",
+      "Implements Minimax algorithm for unbeatable AI logic.",
+      "Stateful game management with WebSocket event broadcasting.",
+      "React frontend built with modern UI and clean board rendering.",
+      "Game state stored using session-aware backend services.",
+      "Deployed via Docker on Railway for scalable deployment.",
+    ],
+    githubLink: [
+      "https://github.com/Hari-prasath-03/live-play",
+      "https://github.com/Hari-prasath-03/live-play-server",
+    ],
+    liveLink: "https://live-play-alpha.vercel.app/",
+  },
+  {
     image: ytAudioPlayeer,
     name: "YT Audio PWA",
     shortDescription: "Progressive web music player using YouTube iframe.",
@@ -178,6 +211,34 @@ export const projects = [
     liveLink: "https://notion-konban.vercel.app/",
   },
   {
+    image: dragdropImg,
+    name: "DragDrop Notes",
+    shortDescription:
+      "Visual note-taking with intuitive drag-and-drop and color coding.",
+    techStacks: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Vite",
+    ],
+    description: [
+      "A full-stack note organizer designed for fast idea capture.",
+      "Drag and drop notes to rearrange them freely with live visualy.",
+      "CRUD with notes also support for custom color labels.",
+      "Notes are tied to user sessions and stored securely in MongoDB.",
+      "Context-based state management for simplicity.",
+      "Built with modular React components and RESTful API integration.",
+      "Modern UI with Tailwind and smooth drag-and-drop interaction.",
+    ],
+    githubLink: [
+      "https://github.com/Hari-prasath-03/notes-app",
+      "https://github.com/Hari-prasath-03/notes-app-server",
+    ],
+    liveLink: "https://dad-notes-app.vercel.app/",
+  },
+  {
     image: quoteLockImg,
     name: "QuoteLock",
     shortDescription: "Secure quote with rate limits and email auth.",
@@ -206,34 +267,6 @@ export const projects = [
       "https://github.com/Hari-prasath-03/QuoteLock-server",
     ],
     liveLink: "https://quotelock.vercel.app/",
-  },
-  {
-    image: dragdropImg,
-    name: "DragDrop Notes",
-    shortDescription:
-      "Visual note-taking with intuitive drag-and-drop and color coding.",
-    techStacks: [
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Vite",
-    ],
-    description: [
-      "A full-stack note organizer designed for fast idea capture.",
-      "Drag and drop notes to rearrange them freely with live visualy.",
-      "CRUD with notes also support for custom color labels.",
-      "Notes are tied to user sessions and stored securely in MongoDB.",
-      "Context-based state management for simplicity.",
-      "Built with modular React components and RESTful API integration.",
-      "Modern UI with Tailwind and smooth drag-and-drop interaction.",
-    ],
-    githubLink: [
-      "https://github.com/Hari-prasath-03/notes-app",
-      "https://github.com/Hari-prasath-03/notes-app-server",
-    ],
-    liveLink: "https://dad-notes-app.vercel.app/",
   },
   {
     image: jagasreeImg,

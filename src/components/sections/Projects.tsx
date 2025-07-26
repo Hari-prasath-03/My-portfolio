@@ -3,8 +3,9 @@ import { projects } from "../../constants/content";
 import Card, { CardHeader } from "../ui/Card";
 import PageTitle from "../ui/PageTitle";
 import { CgArrowTopRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
-type Project = {
+export type Project = {
   name: string;
   shortDescription: string;
   description: string[];
@@ -27,10 +28,16 @@ const Projects = () => {
         </PageTitle>
 
         <div className="flex flex-col gap-10">
-          {projects.map((project: Project, i: number) => (
+          {projects.slice(0, 4).map((project: Project, i: number) => (
             <ProjectCard key={i} project={project} index={i} />
           ))}
         </div>
+        <Link
+          to="/about#projects"
+          className="text-center self-center w-fit mt-8 text-lg md:text-xl font-secondary text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-primary to-sky-300 leading-tight after-hover"
+        >
+          View all projects?
+        </Link>
       </section>
     </div>
   );
@@ -38,21 +45,23 @@ const Projects = () => {
 
 export default Projects;
 
-const ProjectCard = ({
+export const ProjectCard = ({
   project,
   index,
+  animation = true,
 }: {
   project: Project;
   index: number;
+  animation?: boolean;
 }) => {
   return (
     <Card
       animateDirFrom={undefined}
       animateOnce
-      className="flex flex-col sm:flex-row gap-5 sm:gap-10 p-3 sm:p-0 sm:py-10 sm:pl-10 sticky"
-      style={{
-        top: `calc(35px + ${index * 30}px)`,
-      }}
+      className={`flex flex-col sm:flex-row gap-5 sm:gap-10 p-3 sm:p-0 sm:py-10 sm:pl-10 ${
+        animation ? "sticky" : "*:text-xl"
+      }`}
+      style={animation ? { top: `calc(35px + ${index * 30}px)` } : {}}
     >
       <div className="flex-1 flex gap-3 sm:gap-5 flex-col">
         <CardHeader

@@ -4,9 +4,17 @@ export const handleClickLink = (
 ) => {
   e.preventDefault();
   const target = document.querySelector(`#${link}`) as HTMLElement;
-  if (target)
+  if (target) {
     target.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
+    
+    // Clean up URL hash after scrolling
+    setTimeout(() => {
+      if (window.location.hash === `#${link}`) {
+        window.history.replaceState(null, '', window.location.pathname);
+      }
+    }, 1000);
+  }
 };

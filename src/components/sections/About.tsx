@@ -81,7 +81,7 @@ const About = () => {
           </Card>
         </div>
         <Link
-          to="/about"
+          to="/about#about"
           className="text-center self-center w-fit mt-8 text-lg md:text-xl font-secondary text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-primary to-sky-300 leading-tight after-hover"
         >
           View more about me?
