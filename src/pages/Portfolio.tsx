@@ -6,6 +6,7 @@ import Projects from "../components/sections/Projects";
 import { usePopupModel } from "../hooks/usePopupModel";
 import NewPortfolioPopup from "../components/ui/NewPortfolioPopup";
 import useScrollToSection from "../hooks/useScrollToSection";
+import NewPortfolioBatch from "../components/ui/NewPortfolioBatch";
 
 const Portfolio = () => {
   useScrollToSection("/");
@@ -28,6 +29,7 @@ const Portfolio = () => {
       <About />
       <Projects />
       <Contact />
+      <NewPortfolioBatch onClick={openPopup} />
       <PopupBackdrop>
         <NewPortfolioPopup onClose={closePopup} />
       </PopupBackdrop>
